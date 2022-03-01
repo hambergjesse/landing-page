@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -12,20 +11,27 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./scripts.js"></script>
 
     <title>Frontend Mentor | Manage landing page</title>
   </head>
   <body>
-    <header class="topbar">
-      <img src="./images/logo.svg" alt="" />
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Blog</li>
-        <li>Careers</li>
-      </ul>
-      <div class="topbutton"><p>Get Started</p></div>
+    <header class="topnav">
+      <a href="#home" class="active"><img src="./images/logo.svg" alt="" /></a>
+      <div class="myLinks">
+        <a href="#pricing">Pricing</a>
+        <a href="#product">Product</a>
+        <a href="#about">About Us</a>
+        <a href="#careers">Careers</a>
+        <a href="#community">Community</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </header>
     <div class="mainbanner">
       <div class="textsect">
