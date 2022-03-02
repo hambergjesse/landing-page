@@ -261,7 +261,16 @@ img {
 .two p,
 .three p {
   padding-top: 1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 3.5rem;
+}
+
+.reviews h2 {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--darkblue);
+  padding-top: 2rem;
+  padding-bottom: 5rem;
 }
 
 /* attribution */
@@ -271,4 +280,7 @@ img {
 }
 .attribution a {
   color: var(--brightred);
+}
+
+@media screen and (orientation: landscape) {
 }
