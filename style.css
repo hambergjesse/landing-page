@@ -66,7 +66,7 @@ img {
 }
 
 #menu-toggle:checked ~ .menu-box {
-  right: 5.5rem !important;
+  right: 2.6rem !important;
 }
 
 .menu-btn {
@@ -76,7 +76,7 @@ img {
   width: 25px;
   height: 25px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 9;
 }
 
 .menu-btn > span,
@@ -85,8 +85,8 @@ img {
   display: block;
   position: absolute;
   width: 100%;
-  height: 2px;
-  background-color: var(--verydarkblue);
+  height: 4px;
+  background-color: var(--darkblue);
   transition-duration: 0.25s;
 }
 
@@ -105,7 +105,7 @@ img {
   position: fixed;
   top: 8.5rem;
   right: -100%;
-  width: 300px;
+  width: 400px;
   height: 300px;
   padding: 2.65rem 0;
   list-style: none;
@@ -116,17 +116,10 @@ img {
   z-index: 10;
 }
 
-.menu-box img {
-  position: fixed;
-  width: 500px;
-  height: auto;
-  z-index: -5;
-}
-
 .menu-item {
   display: block;
   padding: 12px 24px;
-  color: var(--verydarkblue);
+  color: var(--darkblue);
   font-weight: 600;
   text-align: center;
   transition-duration: 0.25s;
@@ -138,36 +131,137 @@ img {
 /* banner images */
 .mainbanner .bannerimg {
   margin-top: 2rem;
-  z-index: 1;
+  z-index: 5;
 }
 
 .mainbanner .bannerimg img:first-child {
+  position: absolute;
+  right: -6rem;
+  top: -6rem;
+  width: 45rem;
+  z-index: 3;
+}
+
+.mainbanner .bannerimg img:last-child {
   position: relative;
   right: 0rem;
   top: 0rem;
   width: 45rem;
+  z-index: 4;
 }
 
-/* banner text */
-.mainbanner h1 {
+/* title text section + 1st button */
+.mainbanner .textsect,
+.textsect2 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mainbanner .textsect h1 {
   font-size: 50px;
   font-weight: 700;
-  text-align: center;
   color: var(--darkblue);
   padding-bottom: 1rem;
 }
 
-.mainbanner p {
+.mainbanner .textsect p {
   margin-left: 3rem;
   margin-right: 3rem;
   font-size: 22px;
-  text-align: center;
   color: var(--darkgreyblue);
   line-height: 1.75rem;
 }
 
 .mainbanner .textsect {
   padding-bottom: 2rem;
+}
+
+.mainbanner .firstbutton {
+  background: var(--brightred);
+  padding: 1rem;
+  margin-top: 2rem;
+  height: 3rem;
+  width: 9rem;
+  color: white;
+  border-radius: 50px;
+  box-shadow: 0px 5px 1rem 0.1px var(--brightred);
+  cursor: pointer;
+}
+
+.mainbanner .textsect img {
+  position: absolute;
+  right: -19rem;
+  top: 32.5rem;
+  width: 45rem;
+  z-index: -1;
+}
+
+/* second section */
+.secondpart {
+  margin-top: 6em;
+}
+
+.secondpart .textsect2 h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--darkblue);
+  padding-bottom: 1rem;
+}
+
+.secondpart .textsect2 p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-size: 18px;
+  color: var(--darkgreyblue);
+  line-height: 1.75rem;
+  padding-bottom: 4rem;
+}
+
+/* 1-3 list section */
+.numberlist h4 {
+  color: var(--darkblue);
+}
+
+.numberlist p {
+  color: var(--darkgreyblue);
+  line-height: 1.5rem;
+}
+
+/* one */
+.one .one-top,
+.two .two-top,
+.three .three-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  align-content: center;
+  gap: 1rem;
+  margin-right: -2.5rem;
+  background: var(--palered);
+  border-radius: 50px 0px 0px 50px;
+}
+
+.one .one-button,
+.two .two-button,
+.three .three-button {
+  background: var(--brightred);
+  padding: 0.75rem;
+  height: 2.5rem;
+  width: 4rem;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.one p,
+.two p,
+.three p {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 
 /* attribution */
