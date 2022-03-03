@@ -16,6 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+      <!-- jQuery slider -->
     <link rel="stylesheet" href="./slider.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
@@ -24,17 +25,6 @@
     $(document).ready(function(){
       $('.review-slider').bxSlider();
     });
-  </script>
-
-  <script>
-  $(function () {
-    $(".bxslider").bxSlider({
-      mode: "vertical",
-      randomStart: false,
-      captions: false,
-      slideWidth: 1000,
-    });
-  })
   </script>
 
     <title>Frontend Mentor | Manage landing page</title>
@@ -168,20 +158,23 @@
       <h4>Get Started</h4>
     </div>
     <div class="orangebanner">
-      <h2></h2>
+      <h1>Simplify how your team works today.</h1>
       <div class="orangebutton">
-        <p>Get Started</p>
+        <h4>Get Started</h4>
       </div>
+      <div class="bgshape">
+        <img src="./images/bg-tablet-pattern.svg" alt="">
     </div>
+  </div>
     <footer>
-      <div class="leftfoot">
-        <img src="./images/logo.svg" alt="" />
-        <div class="socials">
-          <img src="./images/icon-facebook.svg" alt="" />
-          <img src="./images/icon-youtube.svg" alt="" />
-          <img src="./images/icon-twitter.svg" alt="" />
-          <img src="./images/icon-pinterest.svg" alt="" />
-          <img src="./images/icon-instagram.svg" alt="" />
+      <div class="rightfoot">
+        <div class="signup">
+          <form>
+            <input type="text" id="email" />
+          </form>
+          <div class="signbutton">
+            <p>Go</p>
+          </div>
         </div>
       </div>
       <div class="middlefoot">
@@ -195,19 +188,20 @@
           <li>Privacy Policy</li>
         </ul>
       </div>
-      <div class="rightfoot">
-        <div class="signup">
-          <form>
-            <input type="text" id="email" />
-          </form>
-          <div class="signbutton">
-            <p>Go</p>
-          </div>
+      <div class="leftfoot">
+        <div class="socials">
+          <img src="./images/icon-facebook.svg" alt="" />
+          <img src="./images/icon-youtube.svg" alt="" />
+          <img src="./images/icon-twitter.svg" alt="" />
+          <img src="./images/icon-pinterest.svg" alt="" />
+          <img src="./images/icon-instagram.svg" alt="" />
         </div>
+        <img src="./images/logo.svg" alt="" />
         <div class="copyright">
           <p>Copyright 2020. All Rights Reserved</p>
         </div>
       </div>
+
     </footer>
     <div class="attribution">
       Challenge by

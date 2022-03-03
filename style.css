@@ -277,7 +277,7 @@ p {
   text-align: center;
   color: var(--darkblue);
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3.5rem;
 }
 
 .reviews .review-slider {
@@ -339,6 +339,8 @@ p {
   margin-bottom: 3rem;
 }
 
+/* second button */
+
 .secondbutton {
   text-align: center;
   background: var(--brightred);
@@ -351,6 +353,53 @@ p {
   cursor: pointer;
   text-align: center;
   margin: 0 auto 5rem;
+}
+
+/* orange bar */
+.orangebanner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: -2rem;
+  background: var(--brightred);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.orangebanner h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--darkblue);
+  padding: 0rem 4rem 0rem 4rem;
+  color: var(--lightgray);
+  z-index: 7;
+}
+
+.orangebanner .bgshape {
+  position: absolute;
+  left: -24rem;
+  bottom: -137rem;
+  width: 33rem;
+  opacity: 10%;
+  z-index: 0;
+}
+
+.orangebanner .orangebutton {
+  background: var(--lightgray);
+  padding: 1rem;
+  height: 3rem;
+  width: 9rem;
+  color: var(--brightred);
+  border-radius: 50px;
+  box-shadow: 0px 5px 1rem 0.1px var(--brightred);
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+footer {
+  margin-top: 4rem;
 }
 
 /* attribution */
