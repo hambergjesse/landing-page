@@ -305,8 +305,8 @@ p {
 .reviews .review-slider .thirdrev img,
 .reviews .review-slider .fourthrev img {
   position: absolute;
-  top: 1.5rem;
-  left: 10rem;
+  top: 2.5rem;
+  left: 11rem;
 }
 
 .reviews .review-slider .firstrev {
@@ -314,28 +314,28 @@ p {
   flex-direction: column;
   position: relative;
   background: var(--lightgray);
-  padding: 0rem 3rem 3rem 3rem;
+  padding: 1rem 3rem 3rem 3rem;
   margin-bottom: 3rem;
 }
 
 .reviews .review-slider .secondrev {
   position: relative;
   background: var(--lightgray);
-  padding: 0rem 3rem 3rem 3rem;
+  padding: 1rem 3rem 3rem 3rem;
   margin-bottom: 3rem;
 }
 
 .reviews .review-slider .thirdrev {
   position: relative;
   background: var(--lightgray);
-  padding: 0rem 3rem 3rem 3rem;
+  padding: 1rem 3rem 3rem 3rem;
   margin-bottom: 3rem;
 }
 
 .reviews .review-slider .fourthrev {
   position: relative;
   background: var(--lightgray);
-  padding: 0rem 3rem 3rem 3rem;
+  padding: 1rem 3rem 3rem 3rem;
   margin-bottom: 3rem;
 }
 
