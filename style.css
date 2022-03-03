@@ -39,7 +39,9 @@ img {
   max-width: 100%;
 }
 
-h4 {
+.textsect2 h4,
+.numberlist h4,
+.reviews h4 {
   color: var(--darkblue);
 }
 
@@ -196,6 +198,7 @@ p {
   border-radius: 50px;
   box-shadow: 0px 5px 1rem 0.1px var(--brightred);
   cursor: pointer;
+  text-align: center;
 }
 
 .mainbanner .textsect img {
@@ -292,25 +295,29 @@ p {
 }
 
 .reviews .review-slider h4 {
+  margin-top: 5rem;
   padding-top: 5rem;
   padding-bottom: 1.5rem;
 }
 
-/* first slide */
+.reviews .review-slider .firstrev img,
+.reviews .review-slider .secondrev img,
+.reviews .review-slider .thirdrev img,
+.reviews .review-slider .fourthrev img {
+  position: absolute;
+  top: 1.5rem;
+  left: 10rem;
+}
+
 .reviews .review-slider .firstrev {
+  display: flex;
+  flex-direction: column;
   position: relative;
   background: var(--lightgray);
   padding: 0rem 3rem 3rem 3rem;
   margin-bottom: 3rem;
 }
 
-.reviews .review-slider .firstrev img {
-  position: absolute;
-  top: -3.45rem;
-  left: 10rem;
-}
-
-/* second slide */
 .reviews .review-slider .secondrev {
   position: relative;
   background: var(--lightgray);
@@ -318,13 +325,6 @@ p {
   margin-bottom: 3rem;
 }
 
-.reviews .review-slider .secondrev img {
-  position: absolute;
-  top: -3.45rem;
-  left: 10rem;
-}
-
-/* third slide */
 .reviews .review-slider .thirdrev {
   position: relative;
   background: var(--lightgray);
@@ -332,13 +332,6 @@ p {
   margin-bottom: 3rem;
 }
 
-.reviews .review-slider .thirdrev img {
-  position: absolute;
-  top: -3.45rem;
-  left: 10rem;
-}
-
-/* fourth slide */
 .reviews .review-slider .fourthrev {
   position: relative;
   background: var(--lightgray);
@@ -346,13 +339,19 @@ p {
   margin-bottom: 3rem;
 }
 
-.reviews .review-slider .fourthrev img {
-  position: absolute;
-  top: -3.45rem;
-  left: 10rem;
+.secondbutton {
+  text-align: center;
+  background: var(--brightred);
+  padding: 1rem;
+  height: 3rem;
+  width: 9rem;
+  color: white;
+  border-radius: 50px;
+  box-shadow: 0px 5px 1rem 0.1px var(--brightred);
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto 5rem;
 }
-
-/* reviews slider */
 
 /* attribution */
 .attribution {

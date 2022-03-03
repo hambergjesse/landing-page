@@ -16,6 +16,27 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+    <link rel="stylesheet" href="./slider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.review-slider').bxSlider();
+    });
+  </script>
+
+  <script>
+  $(function () {
+    $(".bxslider").bxSlider({
+      mode: "vertical",
+      randomStart: false,
+      captions: false,
+      slideWidth: 1000,
+    });
+  })
+  </script>
+
     <title>Frontend Mentor | Manage landing page</title>
   </head>
   <body>
@@ -105,7 +126,7 @@
     <div class="reviews">
       <h2>What they’ve said</h2>
       <div class="review-slider">
-      <div class="firstrev">
+      <div class="firstrev" id="slide-1">
         <img src="./images/avatar-anisha.png" alt="" />
         <h4>Anisha Li</h4>
         <p>
@@ -114,7 +135,7 @@
           motivated.”
         </p>
       </div>
-      <div class="secondrev">
+      <div class="secondrev" id="slide-2">
         <img src="./images/avatar-ali.png" alt="" />
         <h4>Ali Bravo</h4>
         <p>
@@ -123,7 +144,7 @@
           more focused.”
         </p>
       </div>
-      <div class="thirdrev">
+      <div class="thirdrev" id="slide-3">
         <img src="./images/avatar-richard.png" alt="" />
         <h4>Richard Watts</h4>
         <p>
@@ -132,7 +153,7 @@
           talk to!”
         </p>
       </div>
-      <div class="fourthrev">
+      <div class="fourthrev" id="slide-4">
         <img src="./images/avatar-shanai.png" alt="" />
         <h4>Shanai Gough</h4>
         <p>
@@ -142,6 +163,9 @@
         </p>
       </div>
     </div>
+    </div>
+    <div class="secondbutton">
+      <h4>Get Started</h4>
     </div>
     <div class="orangebanner">
       <h2></h2>
