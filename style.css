@@ -546,6 +546,18 @@ input:focus {
     transition: 0.5s ease-in-out;
 }
 
+input[type="submit"]:hover,
+select,
+textarea {
+    background-color: var(--highlight);
+    transition: 0.5s ease-in-out;
+}
+
+.middlefoot li:hover {
+    color: var(--brightred);
+    transition: 0.25s ease-in-out;
+}
+
 /* attribution */
 .attribution {
   font-size: 11px;
