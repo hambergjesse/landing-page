@@ -30,6 +30,7 @@
 body {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  overflow-x: hidden; 
 }
 
 a {
@@ -65,6 +66,13 @@ a {
   cursor: pointer;
   z-index: 1;
 }
+
+.desknav img {
+    margin-top: 2.5rem;
+    height: 22px;
+    cursor: pointer;
+    z-index: 1;
+  }
 
 /* hamburger menu */
 #menu-toggle {
@@ -167,6 +175,7 @@ a {
   right: 0rem;
   top: 0rem;
   width: 45rem;
+  height: auto;
   z-index: 4;
 }
 
@@ -252,7 +261,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   align-content: center;
   gap: 1rem;
   margin-right: -2.5rem;
@@ -568,4 +577,190 @@ textarea {
 }
 
 @media screen and (orientation: landscape) {
+    .desknav, .mainbanner, .secondpart {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    /* hide mobile nav on desktop */
+    .topnav {
+        display: none !important;
+    }
+
+    /* display desktop nav */
+    .desknav {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        font-weight: 600;
+        padding-bottom: 3rem;
+        gap: 25rem;
+    }
+
+    .desknav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 2.3rem;
+        gap: 2rem;
+    }
+
+    .desknav li {
+        font-size: 15px;
+        color: var(--darkblue);
+    }
+
+    .desknavbutton {
+        text-align: center;
+        background: var(--brightred);
+        margin-top: 2.3rem;
+        padding: 1rem;
+        height: 3rem;
+        width: 9rem;
+        color: white;
+        border-radius: 50px;
+        box-shadow: 0px 5px 1rem 0.1px var(--brightred);
+        cursor: pointer;
+        text-align: center;
+        z-index: 6;
+    }
+
+    /* first section */
+    .mainbanner {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        align-content: flex-start;
+        text-align: left;
+        gap: 10rem;
+    }
+
+    .mainbanner .bannerimg img:last-child {
+        width: 70rem
+    }
+
+    .mainbanner .textsect {
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        text-align: left;
+        margin-top: 4rem;
+        width: 70%;
+        height: auto;
+
+    }
+
+    .mainbanner .textsect p {
+        margin-left: 0rem;
+        margin-right: 12rem;
+        font-size: 20px;
+    }
+
+    .mainbanner .textsect h1 {
+        font-size: 80px;
+    }
+
+    /* second part */
+    .secondpart {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        gap: 10rem;
+    }
+
+    .secondpart .textsect2 h2, 
+    .secondpart .textsect2 p {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .secondpart .textsect2 h2 {
+        font-size: 60px;
+    }
+
+    .secondpart .textsect2 p {
+        margin-right: 15rem;
+    }
+    
+    .secondpart .textsect2 {
+        width: 90%;
+    }
+
+    .numberlist p {
+        width: 90%;
+    }
+
+    .numberlist h4 {
+        font-size: 20px;
+    }
+
+    .one .one-top,
+    .two .two-top,
+    .three .three-top {
+        background: none;
+        border-radius: 50px 0px 0px 50px;
+    }
+
+    /* reviews */
+    .reviews h2 {
+        font-size: 70px;
+    }
+      
+    .reviews .review-slider {
+        position: relative;
+        text-align: center;
+    }
+      
+    .reviews .review-slider img {
+        padding-bottom: 1.5rem;
+        width: 7%;
+    }
+      
+    .reviews .review-slider p {
+        line-height: 1.5rem;
+    }
+      
+    .reviews .review-slider h4 {
+        margin-top: 5rem;
+        padding-top: 5rem;
+        padding-bottom: 1.5rem;
+    }
+      
+    .reviews .review-slider .firstrev {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background: var(--lightgray);
+        padding: 1rem 3rem 3rem 3rem;
+        margin-bottom: 3rem;
+    }
+      
+    .reviews .review-slider .secondrev {
+        position: relative;
+        background: var(--lightgray);
+        padding: 1rem 3rem 3rem 3rem;
+        margin-bottom: 3rem;
+    }
+      
+    .reviews .review-slider .thirdrev {
+        position: relative;
+        background: var(--lightgray);
+        padding: 1rem 3rem 3rem 3rem;
+        margin-bottom: 3rem;
+    }
+      
+    .reviews .review-slider .fourthrev {
+        position: relative;
+        background: var(--lightgray);
+        padding: 1rem 3rem 3rem 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .desknav {
+        display: none !important;
+    }
 }
