@@ -319,13 +319,13 @@ a {
   padding-bottom: 1.5rem;
 }
 
-.reviews .review-slider .firstrev img,
-.reviews .review-slider .secondrev img,
-.reviews .review-slider .thirdrev img,
-.reviews .review-slider .fourthrev img {
+.reviews .review-slider .firstrev img:first-of-type,
+.reviews .review-slider .secondrev img:first-of-type,
+.reviews .review-slider .thirdrev img:first-of-type,
+.reviews .review-slider .fourthrev img:first-of-type {
   position: absolute;
   top: 2.5rem;
-  left: 11rem;
+  left: 10.25rem;
 }
 
 .reviews .review-slider .firstrev {
@@ -717,50 +717,95 @@ textarea {
         padding-bottom: 1.5rem;
         width: 7%;
     }
+
+    .reviews .review-slider .firstrev img:first-of-type,
+    .reviews .review-slider .secondrev img:first-of-type,
+    .reviews .review-slider .thirdrev img:first-of-type,
+    .reviews .review-slider .fourthrev img:first-of-type {
+        display: none;
+    }
+
+    .reviews .review-slider .firstrev img:last-of-type,
+    .reviews .review-slider .secondrev img:last-of-type,
+    .reviews .review-slider .thirdrev img:last-of-type,
+    .reviews .review-slider .fourthrev img:last-of-type {
+        align-self: center;
+        position: relative;
+        margin-top: 0.5rem;
+        width: 7rem;
+    }
       
     .reviews .review-slider p {
+        align-self: center;
         line-height: 1.5rem;
+        width: 50%;
     }
       
     .reviews .review-slider h4 {
-        margin-top: 5rem;
-        padding-top: 5rem;
+        margin-top: 0rem;
+        padding-top: 0rem;
         padding-bottom: 1.5rem;
     }
       
     .reviews .review-slider .firstrev {
         display: flex;
         flex-direction: column;
-        position: relative;
         background: var(--lightgray);
         padding: 1rem 3rem 3rem 3rem;
         margin-bottom: 3rem;
     }
       
     .reviews .review-slider .secondrev {
-        position: relative;
+        display: flex;
+        flex-direction: column;
         background: var(--lightgray);
         padding: 1rem 3rem 3rem 3rem;
         margin-bottom: 3rem;
     }
       
     .reviews .review-slider .thirdrev {
-        position: relative;
+        display: flex;
+        flex-direction: column;
         background: var(--lightgray);
         padding: 1rem 3rem 3rem 3rem;
         margin-bottom: 3rem;
     }
       
     .reviews .review-slider .fourthrev {
-        position: relative;
+        display: flex;
+        flex-direction: column;
         background: var(--lightgray);
         padding: 1rem 3rem 3rem 3rem;
         margin-bottom: 3rem;
+    }
+
+    /* orange bar */
+    .orangebanner {
+        flex-direction: row;
+        align-items: center;
+        gap: 29rem;
+    }
+
+    .orangebanner h1 {
+        width: 40%;
+        text-align: left;
+        margin-left: 7rem;
+    }
+
+    .orangebanner .orangebutton {
+        margin-top: 0 !important;
     }
 }
 
 @media screen and (orientation: portrait) {
     .desknav {
+        display: none !important;
+    }
+
+    .reviews .review-slider .firstrev img:last-of-type,
+    .reviews .review-slider .secondrev img:last-of-type,
+    .reviews .review-slider .thirdrev img:last-of-type,
+    .reviews .review-slider .fourthrev img:last-of-type {
         display: none !important;
     }
 }
