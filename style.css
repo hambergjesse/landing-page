@@ -352,6 +352,8 @@ a {
 }
 
 .reviews .review-slider .fourthrev {
+  display: flex;
+  flex-direction: column;
   position: relative;
   background: var(--lightgray);
   padding: 1rem 3rem 3rem 3rem;
@@ -807,5 +809,17 @@ textarea {
     .reviews .review-slider .thirdrev img:last-of-type,
     .reviews .review-slider .fourthrev img:last-of-type {
         display: none !important;
+    }
+
+    .reviews .review-slider .firstrev h4,
+    .reviews .review-slider .firstrev p,
+    .reviews .review-slider .secondrev h4,
+    .reviews .review-slider .secondrev p,
+    .reviews .review-slider .thirdrev h4,
+    .reviews .review-slider .thirdrev p,
+    .reviews .review-slider .fourthrev h4,
+    .reviews .review-slider .fourthrev p {
+        
+        padding-left: 2rem;
     }
 }

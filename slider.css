@@ -20,7 +20,7 @@
 .bx-wrapper {
   position: relative;
   margin-bottom: 5rem;
-  padding: 3rem 3rem 3rem 0rem;
+  padding: 3rem 3rem 3em 0rem;
   *zoom: 1;
   -ms-touch-action: pan-y;
   touch-action: pan-y;
@@ -52,6 +52,7 @@ ul.bxslider {
   text-align: center;
   padding-top: 20px;
 }
+
 .bx-wrapper .bx-pager.bx-default-pager a {
   background: rgba(102, 102, 102, 0);
   border: var(--brightred) solid 1px;
@@ -65,6 +66,7 @@ ul.bxslider {
   -webkit-border-radius: 50px;
   border-radius: 50px;
 }
+
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
