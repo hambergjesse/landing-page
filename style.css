@@ -68,11 +68,11 @@ a {
 }
 
 .desknav img {
-    margin-top: 2.5rem;
-    height: 22px;
-    cursor: pointer;
-    z-index: 1;
-  }
+  margin-top: 2.5rem;
+  height: 22px;
+  cursor: pointer;
+  z-index: 1;
+}
 
 /* hamburger menu */
 #menu-toggle {
@@ -593,19 +593,20 @@ textarea {
     .desknav {
         display: flex;
         flex-direction: row;
-        justify-content: start;
+        justify-content: space-between;
         align-items: center;
         font-weight: 600;
         padding-bottom: 3rem;
-        gap: 25rem;
+        gap: 5rem;
     }
 
     .desknav ul {
         display: flex;
         flex-direction: row;
-        justify-content: start;
+        justify-content: space-between;
         margin-top: 2.3rem;
         gap: 2rem;
+        z-index: 6;
     }
 
     .desknav li {
@@ -636,10 +637,11 @@ textarea {
         align-content: flex-start;
         text-align: left;
         gap: 10rem;
+        z-index: 6;
     }
 
     .mainbanner .bannerimg img:last-child {
-        width: 70rem
+        width: 70rem;
     }
 
     .mainbanner .textsect {
@@ -650,6 +652,7 @@ textarea {
         margin-top: 4rem;
         width: 70%;
         height: auto;
+        z-index: 6;
 
     }
 
@@ -690,11 +693,18 @@ textarea {
         width: 90%;
     }
 
-    .numberlist p {
-        width: 90%;
+    .secondpart .numberlist {
+      z-index: 10;
     }
 
-    .numberlist h4 {
+    .secondpart .numberlist p {
+        width: 90%;
+        background: white;
+        padding-right: 0.5rem;
+        border-radius: 1rem;
+    }
+
+    .secondpart .numberlist h4 {
         font-size: 20px;
     }
 
