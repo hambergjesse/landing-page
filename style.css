@@ -842,7 +842,7 @@ textarea {
   }
 
   .orangebanner .bgshape {
-    left: 27rem;
+    left: 22rem;
     bottom: -15rem;
   }
 
@@ -854,6 +854,13 @@ textarea {
 
   /* next session:
   create a desktop version of the footer using separate flexbox columns and rows */
+  /* hide desktop footer */
+  footer:first-of-type {
+    display: none;
+  }
+
+  footer:last-of-type {
+  }
 }
 
 @media screen and (orientation: portrait) {
@@ -890,5 +897,10 @@ textarea {
   .reviews .review-slider .fourthrev h4,
   .reviews .review-slider .fourthrev p {
     padding-left: 2rem;
+  }
+
+  /* hide desktop footer */
+  footer:last-of-type {
+    display: none;
   }
 }
