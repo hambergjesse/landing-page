@@ -851,6 +851,9 @@ textarea {
     right: -22.5rem;
     top: -29rem;
   }
+
+  /* next session:
+  create a desktop version of the footer using separate flexbox columns and rows */
 }
 
 @media screen and (orientation: portrait) {
