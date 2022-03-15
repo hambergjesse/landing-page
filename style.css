@@ -30,7 +30,7 @@
 body {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 a {
@@ -56,8 +56,8 @@ ul {
 }
 
 a {
-    color: var(--lightgray)
-    text-decoration: none;
+  color: var(--lightgray);
+  text-decoration: none;
 }
 
 .topnav img {
@@ -379,13 +379,15 @@ a {
 /* orange bar */
 .orangebanner {
   display: flex;
+  position: relative;
+  overflow: hidden;
+  height: 16rem;
   flex-direction: column;
+  overflow: hidden;
   text-align: center;
   margin-left: -1.5rem;
   margin-right: -1.5rem;
   background: var(--brightred);
-  padding-top: 7rem;
-  padding-bottom: 6rem;
 }
 
 .orangebanner h1 {
@@ -397,13 +399,24 @@ a {
   z-index: 7;
 }
 
+/* background shape 1 */
 .orangebanner .bgshape {
   position: absolute;
-  left: -24rem;
-  bottom: -137rem;
-  width: 33rem;
+  object-fit: cover;
+  width: 35rem;
+  left: -28rem;
+  bottom: -10rem;
   opacity: 10%;
-  z-index: 0;
+  z-index: 1;
+}
+
+/* background shape 2 */
+.orangebanner .bgshape-2 {
+  position: absolute;
+  object-fit: cover;
+  width: 35rem;
+  opacity: 10%;
+  z-index: 1;
 }
 
 .orangebanner .orangebutton {
@@ -418,6 +431,7 @@ a {
   text-align: center;
   margin: 0 auto;
   margin-top: 2rem;
+  z-index: 8;
 }
 
 /* footer */
@@ -483,7 +497,7 @@ textarea {
 }
 
 input:focus {
-    outline:none !important;
+  outline: none !important;
 }
 
 /* footer links */
@@ -509,64 +523,65 @@ input:focus {
 
 /* social media icons & links */
 .leftfoot {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .leftfoot .socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2.75rem;
-    margin-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2.75rem;
+  margin-bottom: 4rem;
 }
 
 .leftfoot .socials img {
-    width: 2.75rem;
-    height: auto;
-    color: none;
+  width: 2.75rem;
+  height: auto;
+  color: none;
 }
 
 .leftfoot .socials img:hover {
-   fill: var(--brightred);
+  fill: var(--brightred);
 }
 
 .leftfoot .logo img {
-    width: 15rem;
-    height: auto;
-    filter: grayscale(1) invert(1);
-    margin-bottom: 3rem;
+  width: 15rem;
+  height: auto;
+  filter: grayscale(1) invert(1);
+  margin-bottom: 3rem;
 }
 
 .copyright p {
-    color: var(--darkgreyblue);
-    font-weight: 500;
-    margin-bottom: 2.5rem;
+  color: var(--darkgreyblue);
+  font-weight: 500;
+  margin-bottom: 2.5rem;
 }
 
 /* hover highlights */
 
-.firstbutton:hover, .secondbutton:hover {
-    background: var(--highlight);
-    transition: 0.5s ease-in-out;
+.firstbutton:hover,
+.secondbutton:hover {
+  background: var(--highlight);
+  transition: 0.5s ease-in-out;
 }
 
 .orangebutton h4:hover {
-    color: var(--highlight);
-    transition: 0.5s ease-in-out;
+  color: var(--highlight);
+  transition: 0.5s ease-in-out;
 }
 
 input[type="submit"]:hover,
 select,
 textarea {
-    background-color: var(--highlight);
-    transition: 0.5s ease-in-out;
+  background-color: var(--highlight);
+  transition: 0.5s ease-in-out;
 }
 
 .middlefoot li:hover {
-    color: var(--brightred);
-    transition: 0.25s ease-in-out;
+  color: var(--brightred);
+  transition: 0.25s ease-in-out;
 }
 
 /* attribution */
@@ -579,257 +594,298 @@ textarea {
 }
 
 @media screen and (orientation: landscape) {
-    .desknav, .mainbanner, .secondpart {
-        margin-left: 10rem;
-        margin-right: 10rem;
-    }
+  .desknav,
+  .mainbanner,
+  .secondpart {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
 
-    /* hide mobile nav on desktop */
-    .topnav {
-        display: none !important;
-    }
+  /* hide mobile nav on desktop */
+  .topnav {
+    display: none !important;
+  }
 
-    /* display desktop nav */
-    .desknav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        font-weight: 600;
-        padding-bottom: 3rem;
-        gap: 5rem;
-    }
+  /* display desktop nav */
+  .desknav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    padding-bottom: 3rem;
+    gap: 5rem;
+  }
 
-    .desknav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 2.3rem;
-        gap: 2rem;
-        z-index: 6;
-    }
+  .desknav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2.3rem;
+    gap: 2rem;
+    z-index: 6;
+  }
 
-    .desknav li {
-        font-size: 15px;
-        color: var(--darkblue);
-    }
+  .desknav li {
+    font-size: 15px;
+    color: var(--darkblue);
+  }
 
-    .desknavbutton {
-        text-align: center;
-        background: var(--brightred);
-        margin-top: 2.3rem;
-        padding: 1rem;
-        height: 3rem;
-        width: 9rem;
-        color: white;
-        border-radius: 50px;
-        box-shadow: 0px 5px 1rem 0.1px var(--brightred);
-        cursor: pointer;
-        text-align: center;
-        z-index: 6;
-    }
+  .desknavbutton {
+    text-align: center;
+    background: var(--brightred);
+    margin-top: 2.3rem;
+    padding: 1rem;
+    height: 3rem;
+    width: 9rem;
+    color: white;
+    border-radius: 50px;
+    box-shadow: 0px 5px 1rem 0.1px var(--brightred);
+    cursor: pointer;
+    text-align: center;
+    z-index: 6;
+  }
 
-    /* first section */
-    .mainbanner {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        align-content: flex-start;
-        text-align: left;
-        gap: 10rem;
-        z-index: 6;
-    }
+  /* first section */
+  .mainbanner {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-content: flex-start;
+    text-align: left;
+    gap: 10rem;
+    z-index: 6;
+  }
 
-    .mainbanner .bannerimg img:last-child {
-        width: 70rem;
-    }
+  .mainbanner .bannerimg img:last-child {
+    width: 70rem;
+  }
 
-    .mainbanner .textsect {
-        display: flex;
-        justify-content: left;
-        align-items: flex-start;
-        text-align: left;
-        margin-top: 4rem;
-        width: 70%;
-        height: auto;
-        z-index: 6;
+  .mainbanner .textsect {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 4rem;
+    width: 70%;
+    height: auto;
+    z-index: 6;
+  }
 
-    }
+  .mainbanner .textsect p {
+    margin-left: 0rem;
+    margin-right: 12rem;
+    font-size: 20px;
+  }
 
-    .mainbanner .textsect p {
-        margin-left: 0rem;
-        margin-right: 12rem;
-        font-size: 20px;
-    }
+  .mainbanner .textsect h1 {
+    font-size: 80px;
+  }
 
-    .mainbanner .textsect h1 {
-        font-size: 80px;
-    }
+  /* second part */
+  .secondpart {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 10rem;
+  }
 
-    /* second part */
-    .secondpart {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
-        gap: 10rem;
-    }
+  .secondpart .textsect2 h2,
+  .secondpart .textsect2 p {
+    text-align: left;
+    margin-left: 0;
+  }
 
-    .secondpart .textsect2 h2, 
-    .secondpart .textsect2 p {
-        text-align: left;
-        margin-left: 0;
-    }
+  .secondpart .textsect2 h2 {
+    font-size: 60px;
+  }
 
-    .secondpart .textsect2 h2 {
-        font-size: 60px;
-    }
+  .secondpart .textsect2 p {
+    margin-right: 15rem;
+  }
 
-    .secondpart .textsect2 p {
-        margin-right: 15rem;
-    }
-    
-    .secondpart .textsect2 {
-        width: 90%;
-    }
+  .secondpart .textsect2 {
+    width: 90%;
+  }
 
-    .secondpart .numberlist {
-      z-index: 10;
-    }
+  .secondpart .numberlist {
+    z-index: 10;
+  }
 
-    .secondpart .numberlist p {
-        width: 90%;
-        background: white;
-        padding-right: 0.5rem;
-        border-radius: 1rem;
-    }
+  .secondpart .numberlist p {
+    width: 90%;
+    background: white;
+    padding-right: 0.5rem;
+    border-radius: 1rem;
+  }
 
-    .secondpart .numberlist h4 {
-        font-size: 20px;
-    }
+  .secondpart .numberlist h4 {
+    font-size: 20px;
+  }
 
-    .one .one-top,
-    .two .two-top,
-    .three .three-top {
-        background: none;
-        border-radius: 50px 0px 0px 50px;
-    }
+  .one .one-top,
+  .two .two-top,
+  .three .three-top {
+    background: none;
+    border-radius: 50px 0px 0px 50px;
+  }
 
-    /* reviews */
-    .reviews h2 {
-        font-size: 70px;
-    }
-      
-    .reviews .review-slider {
-        position: relative;
-        text-align: center;
-    }
-      
-    .reviews .review-slider img {
-        padding-bottom: 1.5rem;
-        width: 7%;
-    }
+  /* second background shape */
+  .mainbanner .textsect img {
+    position: absolute;
+    left: -28rem;
+    top: 73rem;
+    width: 45rem;
+    z-index: -1;
+  }
 
-    .reviews .review-slider .firstrev img:first-of-type,
-    .reviews .review-slider .secondrev img:first-of-type,
-    .reviews .review-slider .thirdrev img:first-of-type,
-    .reviews .review-slider .fourthrev img:first-of-type {
-        display: none;
-    }
+  /* reviews */
+  .reviews {
+    position: relative;
+    z-index: 100;
+  }
 
-    .reviews .review-slider .firstrev img:last-of-type,
-    .reviews .review-slider .secondrev img:last-of-type,
-    .reviews .review-slider .thirdrev img:last-of-type,
-    .reviews .review-slider .fourthrev img:last-of-type {
-        align-self: center;
-        position: relative;
-        margin-top: 0.5rem;
-        width: 7rem;
-    }
-      
-    .reviews .review-slider p {
-        align-self: center;
-        line-height: 1.5rem;
-        width: 50%;
-    }
-      
-    .reviews .review-slider h4 {
-        margin-top: 0rem;
-        padding-top: 0rem;
-        padding-bottom: 1.5rem;
-    }
-      
-    .reviews .review-slider .firstrev {
-        display: flex;
-        flex-direction: column;
-        background: var(--lightgray);
-        padding: 1rem 3rem 3rem 3rem;
-        margin-bottom: 3rem;
-    }
-      
-    .reviews .review-slider .secondrev {
-        display: flex;
-        flex-direction: column;
-        background: var(--lightgray);
-        padding: 1rem 3rem 3rem 3rem;
-        margin-bottom: 3rem;
-    }
-      
-    .reviews .review-slider .thirdrev {
-        display: flex;
-        flex-direction: column;
-        background: var(--lightgray);
-        padding: 1rem 3rem 3rem 3rem;
-        margin-bottom: 3rem;
-    }
-      
-    .reviews .review-slider .fourthrev {
-        display: flex;
-        flex-direction: column;
-        background: var(--lightgray);
-        padding: 1rem 3rem 3rem 3rem;
-        margin-bottom: 3rem;
-    }
+  .reviews h2 {
+    font-size: 70px;
+  }
 
-    /* orange bar */
-    .orangebanner {
-        flex-direction: row;
-        align-items: center;
-        gap: 29rem;
-    }
+  .reviews .review-slider {
+    position: relative;
+    text-align: center;
+  }
 
-    .orangebanner h1 {
-        width: 40%;
-        text-align: left;
-        margin-left: 7rem;
-    }
+  .reviews .review-slider img {
+    padding-bottom: 1.5rem;
+    width: 7%;
+  }
 
-    .orangebanner .orangebutton {
-        margin-top: 0 !important;
-    }
+  .reviews .review-slider .firstrev img:first-of-type,
+  .reviews .review-slider .secondrev img:first-of-type,
+  .reviews .review-slider .thirdrev img:first-of-type,
+  .reviews .review-slider .fourthrev img:first-of-type {
+    display: none;
+  }
+
+  .reviews .review-slider .firstrev img:last-of-type,
+  .reviews .review-slider .secondrev img:last-of-type,
+  .reviews .review-slider .thirdrev img:last-of-type,
+  .reviews .review-slider .fourthrev img:last-of-type {
+    align-self: center;
+    position: relative;
+    margin-top: 0.5rem;
+    width: 7rem;
+  }
+
+  .reviews .review-slider p {
+    align-self: center;
+    line-height: 1.5rem;
+    width: 50%;
+  }
+
+  .reviews .review-slider h4 {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .reviews .review-slider .firstrev {
+    display: flex;
+    flex-direction: column;
+    background: var(--lightgray);
+    padding: 1rem 3rem 3rem 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .reviews .review-slider .secondrev {
+    display: flex;
+    flex-direction: column;
+    background: var(--lightgray);
+    padding: 1rem 3rem 3rem 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .reviews .review-slider .thirdrev {
+    display: flex;
+    flex-direction: column;
+    background: var(--lightgray);
+    padding: 1rem 3rem 3rem 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .reviews .review-slider .fourthrev {
+    display: flex;
+    flex-direction: column;
+    background: var(--lightgray);
+    padding: 1rem 3rem 3rem 3rem;
+    margin-bottom: 3rem;
+  }
+
+  /* orange bar */
+  .orangebanner {
+    flex-direction: row;
+    align-items: center;
+    gap: 29rem;
+  }
+
+  .orangebanner h1 {
+    width: 40%;
+    text-align: left;
+    margin-left: 7rem;
+    z-index: 2;
+  }
+
+  .orangebanner .orangebutton {
+    position: relative;
+    margin-top: 0 !important;
+    z-index: 2;
+  }
+
+  .orangebanner .bgshape {
+    left: 27rem;
+    bottom: -15rem;
+  }
+
+  .orangebanner .bgshape-2 {
+    width: 40rem;
+    right: -22.5rem;
+    top: -29rem;
+  }
 }
 
 @media screen and (orientation: portrait) {
-    .desknav {
-        display: none !important;
-    }
+  /* hide desktop navbar on mobile */
+  .desknav {
+    display: none !important;
+  }
 
-    .reviews .review-slider .firstrev img:last-of-type,
-    .reviews .review-slider .secondrev img:last-of-type,
-    .reviews .review-slider .thirdrev img:last-of-type,
-    .reviews .review-slider .fourthrev img:last-of-type {
-        display: none !important;
-    }
+  /* orange banner mobile version */
+  .orangebanner {
+    height: 29rem;
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+  }
 
-    .reviews .review-slider .firstrev h4,
-    .reviews .review-slider .firstrev p,
-    .reviews .review-slider .secondrev h4,
-    .reviews .review-slider .secondrev p,
-    .reviews .review-slider .thirdrev h4,
-    .reviews .review-slider .thirdrev p,
-    .reviews .review-slider .fourthrev h4,
-    .reviews .review-slider .fourthrev p {
-        
-        padding-left: 2rem;
-    }
+  .orangebanner .bgshape-2 {
+    display: none;
+  }
+
+  /* hide desktop review image versions */
+  .reviews .review-slider .firstrev img:last-of-type,
+  .reviews .review-slider .secondrev img:last-of-type,
+  .reviews .review-slider .thirdrev img:last-of-type,
+  .reviews .review-slider .fourthrev img:last-of-type {
+    display: none !important;
+  }
+
+  .reviews .review-slider .firstrev h4,
+  .reviews .review-slider .firstrev p,
+  .reviews .review-slider .secondrev h4,
+  .reviews .review-slider .secondrev p,
+  .reviews .review-slider .thirdrev h4,
+  .reviews .review-slider .thirdrev p,
+  .reviews .review-slider .fourthrev h4,
+  .reviews .review-slider .fourthrev p {
+    padding-left: 2rem;
+  }
 }
