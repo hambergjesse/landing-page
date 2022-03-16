@@ -7,7 +7,7 @@
   /* primary */
 
   --brightred: hsl(12, 88%, 59%);
-  --highlight: hsl(12, 70%, 65%);
+  --highlight: hsl(12, 100%, 71%);
   --darkblue: hsl(228, 39%, 23%);
 
   /* neutral */
@@ -434,9 +434,6 @@ a {
   margin: 0 auto;
   margin-top: 2rem;
   z-index: 8;
-}
-
-.orangebutton h4 {
   transition: 0.5s ease-in-out;
 }
 
@@ -565,6 +562,11 @@ input:focus {
   margin-bottom: 3rem;
 }
 
+.leftfoot .logo img:hover {
+  filter: invert(44%) sepia(72%) saturate(2262%) hue-rotate(340deg)
+    brightness(101%) contrast(90%);
+}
+
 .copyright p {
   color: var(--darkgreyblue);
   font-weight: 500;
@@ -578,8 +580,8 @@ input:focus {
   background: var(--highlight);
 }
 
-.orangebutton h4:hover {
-  color: var(--highlight);
+.orangebutton:hover {
+  box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.5);
 }
 
 input[type="submit"]:hover,
@@ -652,6 +654,7 @@ textarea {
     cursor: pointer;
     text-align: center;
     z-index: 6;
+    transition: 0.5s ease-in-out;
   }
 
   .desknavbutton:hover {
@@ -911,6 +914,11 @@ textarea {
     height: auto;
     filter: grayscale(1) invert(1);
     margin-bottom: 4rem;
+  }
+
+  .deskleftfoot .logo img:hover {
+    filter: invert(44%) sepia(72%) saturate(2262%) hue-rotate(340deg)
+      brightness(101%) contrast(90%);
   }
 
   /* desk middle foot */

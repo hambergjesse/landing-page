@@ -16,49 +16,55 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-      <!-- jQuery slider -->
-    <link rel="stylesheet" href="./css/slider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('.review-slider').bxSlider();
-    });
-  </script>
+    <!-- jQuery slider -->
+    <link rel="stylesheet" href="./css/slider.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".review-slider").bxSlider();
+      });
+    </script>
 
     <title>Frontend Mentor | Manage landing page</title>
   </head>
   <body>
-    <!-- Mobile Nav -->
-    <header class="topnav">
-      <img src="./images/logo.svg" alt="" />
-      <input id="menu-toggle" type="checkbox" />
-      <label class="menu-btn" for="menu-toggle">
-        <span></span>
-      </label>
-      <ul class="menu-box">
-        <li><a class="menu-item" href="#">Pricing</a></li>
-        <li><a class="menu-item" href="#">Product</a></li>
-        <li><a class="menu-item" href="#">About Us</a></li>
-        <li><a class="menu-item" href="#">Careers</a></li>
-        <li><a class="menu-item" href="#">Community</a></li> 
-    </header>
-    <!-- Desktop Nav -->
-    <header class="desknav">
-      <img src="./images/logo.svg" alt="" />
-      <ul>
-        <a href="#"><li>Pricing</li></a>
-        <a href="#"><li>Product</li></a>
-        <a href="#"><li>About Us</li></a>
-        <a href="#"><li>Careers</li></a>
-        <a href="#"><li>Community</li></a>
-      </ul>
-      <div class="desknavbutton">
-        <h4>Get Started</h4>
-      </div>
-    </header>
-    <!-- end -->
-    <div class="mainbanner">
+    <!-- top nav bars -->
+    <section>
+      <!-- mobile nav -->
+      <header class="topnav">
+        <img src="./images/logo.svg" alt="" />
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-btn" for="menu-toggle">
+          <span></span>
+        </label>
+        <ul class="menu-box">
+          <li><a class="menu-item" href="#">Pricing</a></li>
+          <li><a class="menu-item" href="#">Product</a></li>
+          <li><a class="menu-item" href="#">About Us</a></li>
+          <li><a class="menu-item" href="#">Careers</a></li>
+          <li><a class="menu-item" href="#">Community</a></li>
+        </ul>
+      </header>
+
+      <!-- desktop nav -->
+      <header class="desknav">
+        <img src="./images/logo.svg" alt="" />
+        <ul>
+          <a href="#"><li>Pricing</li></a>
+          <a href="#"><li>Product</li></a>
+          <a href="#"><li>About Us</li></a>
+          <a href="#"><li>Careers</li></a>
+          <a href="#"><li>Community</li></a>
+        </ul>
+        <div class="desknavbutton">
+          <h4>Get Started</h4>
+        </div>
+      </header>
+    </section>
+
+    <!-- first banner section -->
+    <section class="mainbanner">
       <div class="bannerimg">
         <img src="./images/bg-tablet-pattern.svg" alt="" />
         <img src="./images/illustration-intro.svg" alt="" />
@@ -74,8 +80,10 @@
         </div>
         <img src="./images/bg-tablet-pattern.svg" alt="" />
       </div>
-    </div>
-    <div class="secondpart">
+    </section>
+
+    <!-- second banner section -->
+    <section class="secondpart">
       <div class="textsect2">
         <h2>What’s different about Manage?</h2>
         <p>
@@ -125,96 +133,109 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="reviews">
+    </section>
+
+    <!-- review section -->
+    <section class="reviews">
       <h2>What they’ve said</h2>
       <div class="review-slider">
-      <div class="firstrev" id="slide-1">
-        <img src="./images/avatar-anisha.png" alt="" />
-        <img src="./images/avatar-anisha.png" alt="" />
-        <h4>Anisha Li</h4>
-        <p>
-          “Manage has supercharged our team’s workflow. The ability to maintain
-          visibility on larger milestones at all times keeps everyone
-          motivated.”
-        </p>
+        <div class="firstrev" id="slide-1">
+          <img src="./images/avatar-anisha.png" alt="" />
+          <img src="./images/avatar-anisha.png" alt="" />
+          <h4>Anisha Li</h4>
+          <p>
+            “Manage has supercharged our team’s workflow. The ability to
+            maintain visibility on larger milestones at all times keeps everyone
+            motivated.”
+          </p>
+        </div>
+        <div class="secondrev" id="slide-2">
+          <img src="./images/avatar-ali.png" alt="" />
+          <img src="./images/avatar-ali.png" alt="" />
+          <h4>Ali Bravo</h4>
+          <p>
+            “We have been able to cancel so many other subscriptions since using
+            Manage. There is no more cross-channel confusion and everyone is
+            much more focused.”
+          </p>
+        </div>
+        <div class="thirdrev" id="slide-3">
+          <img src="./images/avatar-richard.png" alt="" />
+          <img src="./images/avatar-richard.png" alt="" />
+          <h4>Richard Watts</h4>
+          <p>
+            “Manage allows us to provide structure and process. It keeps us
+            organized and focused. I can’t stop recommending them to everyone I
+            talk to!”
+          </p>
+        </div>
+        <div class="fourthrev" id="slide-4">
+          <img src="./images/avatar-shanai.png" alt="" />
+          <img src="./images/avatar-shanai.png" alt="" />
+          <h4>Shanai Gough</h4>
+          <p>
+            “Their software allows us to track, manage and collaborate on our
+            projects from anywhere. It keeps the whole team in-sync without
+            being intrusive.”
+          </p>
+        </div>
       </div>
-      <div class="secondrev" id="slide-2">
-        <img src="./images/avatar-ali.png" alt="" />
-        <img src="./images/avatar-ali.png" alt="" />
-        <h4>Ali Bravo</h4>
-        <p>
-          “We have been able to cancel so many other subscriptions since using
-          Manage. There is no more cross-channel confusion and everyone is much
-          more focused.”
-        </p>
-      </div>
-      <div class="thirdrev" id="slide-3">
-        <img src="./images/avatar-richard.png" alt="" />
-        <img src="./images/avatar-richard.png" alt="" />
-        <h4>Richard Watts</h4>
-        <p>
-          “Manage allows us to provide structure and process. It keeps us
-          organized and focused. I can’t stop recommending them to everyone I
-          talk to!”
-        </p>
-      </div>
-      <div class="fourthrev" id="slide-4">
-        <img src="./images/avatar-shanai.png" alt="" />
-        <img src="./images/avatar-shanai.png" alt="" />
-        <h4>Shanai Gough</h4>
-        <p>
-          “Their software allows us to track, manage and collaborate on our
-          projects from anywhere. It keeps the whole team in-sync without being
-          intrusive.”
-        </p>
-      </div>
-    </div>
-    </div>
+    </section>
+
+    <!-- button under reviews -->
     <div class="secondbutton">
       <h4>Get Started</h4>
     </div>
-    <div class="orangebanner">
+
+    <!-- orange banner section -->
+    <section class="orangebanner">
       <h1>Simplify how your team works today.</h1>
       <div class="orangebutton">
         <h4>Get Started</h4>
       </div>
       <div class="bgshape">
-        <img src="./images/bg-tablet-pattern.svg" alt="">
-    </div>
-    <div class="bgshape-2">
-      <img src="./images/bg-tablet-pattern.svg" alt="">
-  </div>
-  </div>
+        <img src="./images/bg-tablet-pattern.svg" alt="" />
+      </div>
+      <div class="bgshape-2">
+        <img src="./images/bg-tablet-pattern.svg" alt="" />
+      </div>
+    </section>
 
-  <!-- mobile footer version -->
+    <!-- mobile footer version -->
     <footer>
       <div class="rightfoot">
         <div class="signup">
           <div class="form">
             <form id="signup">
-              <input type="text" id="email" pattern=".+@+\.com" size="30" required oninvalid="this.setCustomValidity('Please use a valid email address.')" placeholder="Updates in your inbox..." />
+              <input
+                type="text"
+                id="email"
+                pattern=".+@+\.com"
+                size="30"
+                required
+                oninvalid="this.setCustomValidity('Please use a valid email address.')"
+                placeholder="Updates in your inbox..."
+              />
             </form>
-          </form>
-        </div>
-        <div class="submit">
-          <input type="submit" form="signup" value="GO">
-        </div>
+          </div>
+          <div class="submit">
+            <input type="submit" form="signup" value="GO" />
+          </div>
         </div>
       </div>
       <div class="middlefoot">
         <ul>
           <div class="footcolumn">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About Us</a></li>
-        </div>
-        <div class="footcolumn2">
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+          </div>
+          <div class="footcolumn2">
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </div>
         </ul>
       </div>
       <div class="leftfoot">
@@ -226,20 +247,19 @@
           <a href="#"><img src="./images/icon-instagram.svg" alt="" /></a>
         </div>
         <div class="logo">
-        <img src="./images/logo.svg" alt="" />
-      </div>
+          <a href="#"><img src="./images/logo.svg" alt="" /></a>
+        </div>
         <div class="copyright">
           <p>Copyright 2020. All Rights Reserved</p>
         </div>
       </div>
-
     </footer>
 
     <!-- desktop footer version -->
     <footer>
       <div class="deskleftfoot">
         <div class="logo">
-          <img src="./images/logo.svg" alt="" />
+          <a href="#"><img src="./images/logo.svg" alt="" /></a>
         </div>
         <div class="socials">
           <a href="#"><img src="./images/icon-facebook.svg" alt="" /></a>
@@ -248,37 +268,47 @@
           <a href="#"><img src="./images/icon-pinterest.svg" alt="" /></a>
           <a href="#"><img src="./images/icon-instagram.svg" alt="" /></a>
         </div>
-    </div>
-    <div class="deskmiddlefoot">
-      <ul>
-        <div class="footcolumn">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About Us</a></li>
       </div>
-      <div class="footcolumn2">
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Community</a></li>
-        <li><a href="#">Privacy Policy</a></li>
+      <div class="deskmiddlefoot">
+        <nav>
+          <ul>
+            <div class="footcolumn">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About Us</a></li>
+            </div>
+            <div class="footcolumn2">
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </div>
+          </ul>
+        </nav>
       </div>
-      </ul>
-    </div>
-    <div class="deskrightfoot">
-      <div class="signup">
-        <div class="form">
-        <form name="signup">
-          <input type="text" name="email" pattern=".+@+\.com" size="30" required oninvalid="this.setCustomValidity('Please use a valid email address.')" placeholder="Updates in your inbox..."  />
-        </form>
+      <div class="deskrightfoot">
+        <div class="signup">
+          <div class="form">
+            <form name="signup">
+              <input
+                type="text"
+                name="email"
+                pattern=".+@+\.com"
+                size="30"
+                required
+                oninvalid="this.setCustomValidity('Please use a valid email address.')"
+                placeholder="Updates in your inbox..."
+              />
+            </form>
+          </div>
+          <div class="submit">
+            <input type="submit" form="signup" value="GO" />
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright 2020. All Rights Reserved</p>
+        </div>
       </div>
-      <div class="submit">
-        <input type="submit" form="signup" value="GO">
-      </div>
-      </div>
-      <div class="copyright">
-        <p>Copyright 2020. All Rights Reserved</p>
-      </div>
-    </div>
     </footer>
     <!-- <div class="attribution">
       Challenge by
