@@ -94,7 +94,10 @@ a {
 }
 
 #menu-toggle:checked ~ .menu-box {
-  right: 2.6rem !important;
+  margin: 0 auto;
+  right: 8.25% !important;
+  left: 8.25% !important;
+  box-shadow: 0px 20rem 100rem 10rem rgba(35, 35, 49, 0.25);
 }
 
 .menu-btn {
@@ -138,7 +141,6 @@ a {
   padding: 2.65rem 0;
   list-style: none;
   background-color: white;
-  box-shadow: 0px 20rem 100rem 10rem rgba(35, 35, 49, 0.25);
   transition-duration: 0.35s;
   border-radius: 1.5%;
   z-index: 10;
