@@ -218,6 +218,7 @@ a {
   box-shadow: 0px 5px 1rem 0.1px var(--brightred);
   cursor: pointer;
   text-align: center;
+  transition: 0.5s ease-in-out;
 }
 
 .mainbanner .textsect img {
@@ -374,6 +375,7 @@ a {
   cursor: pointer;
   text-align: center;
   margin: 0 auto 5rem;
+  transition: 0.5s ease-in-out;
 }
 
 /* orange bar */
@@ -432,6 +434,10 @@ a {
   margin: 0 auto;
   margin-top: 2rem;
   z-index: 8;
+}
+
+.orangebutton h4 {
+  transition: 0.5s ease-in-out;
 }
 
 /* footer */
@@ -494,6 +500,7 @@ textarea {
   text-align: center;
   border: none;
   font-weight: 700;
+  transition: 0.5s ease-in-out;
 }
 
 input:focus {
@@ -511,6 +518,10 @@ input:focus {
   margin-right: 3.25rem;
   margin-bottom: 4rem;
   gap: 10rem;
+}
+
+.middlefoot a {
+  transition: 0.25s ease-in-out;
 }
 
 .middlefoot .footcolumn,
@@ -543,7 +554,8 @@ input:focus {
 }
 
 .leftfoot .socials img:hover {
-  fill: var(--brightred);
+  filter: invert(47%) sepia(26%) saturate(1918%) hue-rotate(332deg)
+    brightness(101%) contrast(90%);
 }
 
 .leftfoot .logo img {
@@ -564,24 +576,20 @@ input:focus {
 .firstbutton:hover,
 .secondbutton:hover {
   background: var(--highlight);
-  transition: 0.5s ease-in-out;
 }
 
 .orangebutton h4:hover {
   color: var(--highlight);
-  transition: 0.5s ease-in-out;
 }
 
 input[type="submit"]:hover,
 select,
 textarea {
   background-color: var(--highlight);
-  transition: 0.5s ease-in-out;
 }
 
-.middlefoot li:hover {
+.middlefoot a:hover {
   color: var(--brightred);
-  transition: 0.25s ease-in-out;
 }
 
 /* attribution */
@@ -644,6 +652,10 @@ textarea {
     cursor: pointer;
     text-align: center;
     z-index: 6;
+  }
+
+  .desknavbutton:hover {
+    background: var(--highlight);
   }
 
   /* first section */
@@ -793,7 +805,7 @@ textarea {
     display: flex;
     flex-direction: column;
     background: var(--lightgray);
-    padding: 1rem 3rem 3rem 3rem;
+    padding: 1rem 0rem 3rem 3rem;
     margin-bottom: 3rem;
   }
 
@@ -801,7 +813,7 @@ textarea {
     display: flex;
     flex-direction: column;
     background: var(--lightgray);
-    padding: 1rem 3rem 3rem 3rem;
+    padding: 1rem 0rem 3rem 3rem;
     margin-bottom: 3rem;
   }
 
@@ -809,7 +821,7 @@ textarea {
     display: flex;
     flex-direction: column;
     background: var(--lightgray);
-    padding: 1rem 3rem 3rem 3rem;
+    padding: 1rem 0rem 3rem 3rem;
     margin-bottom: 3rem;
   }
 
@@ -817,7 +829,7 @@ textarea {
     display: flex;
     flex-direction: column;
     background: var(--lightgray);
-    padding: 1rem 3rem 3rem 3rem;
+    padding: 1rem 0rem 3rem 3rem;
     margin-bottom: 3rem;
   }
 
@@ -852,14 +864,148 @@ textarea {
     top: -29rem;
   }
 
-  /* next session:
-  create a desktop version of the footer using separate flexbox columns and rows */
   /* hide desktop footer */
   footer:first-of-type {
     display: none;
   }
 
+  /* desktop footer */
   footer:last-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--verydarkblue);
+    padding-top: 6rem;
+    padding-left: 11rem;
+    padding-right: 13rem;
+  }
+
+  /* desk left foot */
+  .deskleftfoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .deskleftfoot .socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .deskleftfoot .socials img {
+    width: 1.5rem;
+    height: auto;
+    color: none;
+  }
+
+  .deskleftfoot .socials img:hover {
+    filter: invert(47%) sepia(26%) saturate(1918%) hue-rotate(332deg)
+      brightness(101%) contrast(90%);
+  }
+
+  .deskleftfoot .logo img {
+    width: 11rem;
+    height: auto;
+    filter: grayscale(1) invert(1);
+    margin-bottom: 4rem;
+  }
+
+  /* desk middle foot */
+  .deskmiddlefoot ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3.5rem;
+    margin-right: 3.25rem;
+    gap: 16rem;
+  }
+
+  .deskmiddlefoot a {
+    transition: 0.25s ease-in-out;
+  }
+
+  .deskmiddlefoot a:hover {
+    color: var(--brightred);
+  }
+
+  .deskmiddlefoot .footcolumn,
+  .deskmiddlefoot .footcolumn2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--lightgray);
+  }
+
+  /* desk right foot */
+  .deskrightfoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  .deskrightfoot .signup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    gap: 1em;
+  }
+
+  .deskrightfoot .signup form {
+    background: var(--lightgray);
+    padding: 1rem;
+    height: 3.5rem;
+    width: 18rem;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    border: none;
+    background: none;
+    padding-top: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"],
+  select,
+  textarea {
+    background: var(--brightred);
+    padding: 1rem;
+    padding-top: 1.1rem;
+    height: 3.5rem;
+    width: 7rem;
+    color: var(--lightgray);
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+  }
+
+  input:focus {
+    outline: none !important;
+  }
+
+  footer:last-of-type .copyright p {
+    color: var(--darkgreyblue);
+    font-weight: 500;
   }
 }
 
